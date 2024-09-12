@@ -1,13 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Catálogo de Instrumentos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <p>Modelo para teste github</p>
+    <header>
+        <div class="container">
+            <h1>Catálogo de Instrumentos Musicais</h1>
+            <nav>
+                <ul>
+                    <li><a href="#guitarras">Guitarras</a></li>
+                    <li><a href="#pedais">Pedais</a></li>
+                    <li><a href="#outros">Outros</a></li>
+                    <li><a href="#promocoes">Promoções</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <!-- Barra de Pesquisa -->
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Pesquisar...">
+                <button id="search-button">Pesquisar</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Seção de Promoções -->
+        <section id="promocoes" class="promocoes">
+            <h2>Promoções</h2>
+            <div class="promo-slider">
+                <div class="promo-items">
+                    <div class="promo-item">
+                        <img src="img/pedal.png" alt="Desconto de 20% em Guitarras" loading="lazy">
+                        <p>Desconto de 20% em Guitarras!</p>
+                    </div>
+                    <div class="promo-item">
+                        <img src="img/pedais.jpg" alt="Frete Grátis em Pedais" loading="lazy">
+                        <p>Frete Grátis em Pedais!</p>
+                    </div>
+                    <div class="promo-item">
+                        <img src="img/Pedalboard.jpg" alt="50% Off em Acessórios Selecionados" loading="lazy">
+                        <p>50% Off em Acessórios Selecionados!</p>
+                    </div>
+                </div>
+
+                <!-- Controles do Slider -->
+                <button class="prev" aria-label="Slide Anterior">‹</button>
+                <button class="next" aria-label="Próximo Slide">›</button>
+
+                <!-- Indicadores do Slider -->
+                <div class="slider-indicators">
+                    <span class="indicator" aria-label="Slide 1"></span>
+                    <span class="indicator" aria-label="Slide 2"></span>
+                    <span class="indicator" aria-label="Slide 3"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Guitarras -->
+        <section id="guitarras">
+            <h2>Guitarras</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="img/guitar01.jpeg" alt="Guitarra Modelo 1" loading="lazy">
+                    <h3>Stratocaster</h3>
+                    <p>Traste de Inox, captadores Perfect tone e muitos outros upgrades</p>
+                    <p class="price">R$3.000,00</p>
+                    <button class="cta-button">Comprar Agora</button>
+                </div>
+                <div class="product">
+                    <img src="img/guitar02.jpeg" alt="Guitarra Modelo 2" loading="lazy">
+                    <h3>Tagima JA</h3>
+                    <p>Ponte Gotoh</p>
+                    <p class="price">R$3.500,00</p>
+                    <button class="cta-button">Comprar Agora</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Pedais -->
+        <section id="pedais">
+            <h2>Pedais</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="img/pedal.png" alt="Pedal Modelo 1" loading="lazy">
+                    <h3>Pedal Modelo 1</h3>
+                    <p>Descrição detalhada do Pedal Modelo 1.</p>
+                    <p class="price">R$300,00</p>
+                    <button class="cta-button">Comprar Agora</button>
+                </div>
+                <div class="product">
+                    <img src="img/pedais.jpg" alt="Pedal Modelo 2" loading="lazy">
+                    <h3>Pedal Modelo 2</h3>
+                    <p>Descrição detalhada do Pedal Modelo 2.</p>
+                    <p class="price">R$350,00</p>
+                    <button class="cta-button">Comprar Agora</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Outros Produtos -->
+        <section id="outros">
+            <h2>Outros</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="img/Pedalboard.jpg" alt="Acessório Modelo 1" loading="lazy">
+                    <h3>Acessório Modelo 1</h3>
+                    <p>Descrição detalhada do Acessório Modelo 1.</p>
+                    <p class="price">R$150,00</p>
+                    <button class="cta-button">Comprar Agora</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco através do email: <a href="mailto:contato@seuinstrumento.com">contato@seuinstrumento.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Seu Instrumento Musical</p>
+    </footer>
+
+    <!-- Botão Voltar ao Topo -->
+    <button id="back-to-top" aria-label="Voltar ao topo">Voltar ao topo</button>
+
+    <!-- Inclusão do Script JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
